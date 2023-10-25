@@ -1,17 +1,17 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>中国特色科学社会主义理论与实践学习笔记</title>
-        <meta name="robots" content="noindex" />
+        <meta name="robots" content="noindex">
 
 
         <!-- Custom HTML head -->
         
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -32,7 +32,7 @@
         <!-- Custom theme stylesheets -->
 
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
@@ -62,29 +62,34 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var html = document.querySelector('html');
+            var body = document.querySelector('body');
             var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">1.</strong> 导论</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">2.</strong> 中国特色社会主义进入新时代</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">1.</strong> 导论</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">2.</strong> 中国特色社会主义进入新时代</a></li><li class="chapter-item expanded "><a href="231018.html"><strong aria-hidden="true">3.</strong> 新时代坚持和发展中国特色社会主义</a></li><li class="chapter-item expanded "><a href="231025.html"><strong aria-hidden="true">4.</strong> 新时代中国特色社会主义经济建设</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -117,9 +122,9 @@
                                 <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
@@ -247,6 +252,23 @@
 <p>四、新时代是怎样的时代（见书本P24）</p>
 <p>五、新时代的新体现在哪？（见书本P25）</p>
 <p>六、中国特色社会主义进入新时代的重大意义（见书本P27）</p>
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><p>1、课堂关键词</p>
+<ul>
+<li>
+<p>乡村振兴战略</p>
+</li>
+<li>
+<p>区域协调发展</p>
+</li>
+<li>
+<p>推进高水平对外开放</p>
+</li>
+<li>
+<p>一带一路</p>
+</li>
+</ul>
+<p>2、做报告——主题总体国家安全观</p>
+<p><img src="https://vip2.loli.io/2023/10/25/dv4WUnLbxIB3FZz.webp" alt="" /></p>
 
                     </main>
 
